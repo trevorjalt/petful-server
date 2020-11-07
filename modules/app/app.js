@@ -7,6 +7,7 @@ const petsRouter = require('../pets/pets-router')
 
 const app = express()
 
+app.options('*', cors())
 app.use(cors({
     origin: CLIENT_ORIGIN
 }))
