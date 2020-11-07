@@ -16,7 +16,6 @@ module.exports = {
 
   enqueue(person) {
     people.enqueue(person)
-    // return people.all()
   },
 
   dequeue(person) {

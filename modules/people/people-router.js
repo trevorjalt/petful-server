@@ -15,7 +15,6 @@ peopleRouter
     }
   })
   .post(json, (req, res, next) => {
-    // People.enqueue(...req.body)
     try {
       const { person } = req.body
       PeopleService.enqueue(person)
