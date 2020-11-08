@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-require('dotenv').config()
+const { CLIENT_ORIGIN } = require('../../config')
 const helmet = require('helmet')
 const peopleRouter = require('../people/people-router')
 const petsRouter = require('../pets/pets-router')
